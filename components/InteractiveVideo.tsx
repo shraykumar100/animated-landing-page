@@ -14,7 +14,7 @@ const InteractiveVideo: React.FC = () => {
 		const preloadAllImages = async () => {
 			for (let i = 1; i <= totalFrames; i++) {
 				const img = new Image();
-				img.src = `/images/Airdrop Page 2_${String(i).padStart(5, "0")}.jpg`;
+				img.src = `/frames/Airdrop Page 2_${String(i).padStart(5, "0")}.jpg`;
 				await new Promise((resolve) => {
 					img.onload = resolve;
 				});
